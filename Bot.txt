@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void Choice()
+{
+    printf("Чего вы хотите?\n");
+    printf("(1. Ссылка на вк создателя | 2. Карта для пожертвований)\n");
+}
+
+int main(){
+    
+    int choice;
+    
+    while(1)
+    {
+        Choice();
+        scanf("%d", &choice);
+        
+        switch(choice)
+        {
+            case 1:
+                
+                printf("Создатель: https://vk.com/youpzz\n");
+                break;
+            case 2:
+                
+                printf("Карта: 4279 3806 2505 2826\n");
+                break;
+            default:
+                printf("Я вас не понял!\n");
+                break;
+        }
+    }
+    
+    return 0;
+}
